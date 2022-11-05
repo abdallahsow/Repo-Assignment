@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Jombotron from "../components/Jombotron/Jombotron";
 import Navbar from "../components/Navbar/Navbar";
 import styles from "../styles/Home.module.css";
 
@@ -13,6 +14,7 @@ export default function Home() {
 
       <main>
         <Navbar />
+        <Jombotron />
       </main>
     </div>
   );
