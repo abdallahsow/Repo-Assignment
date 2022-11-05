@@ -5,8 +5,8 @@ const Jombotron = () => {
         <h1 class="display-4">Cats World</h1>
         <p class="lead">
           Find your new best friend today. Adopt a wonderful cat.
-              </p>
-              <button className="btn btn-primary">Start looking</button>
+        </p>
+        <button className="btn btn-primary">Start looking</button>
       </div>
     </div>
   );
