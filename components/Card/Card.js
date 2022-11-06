@@ -1,15 +1,15 @@
 import styles from "./Card.module.css";
 
-export default function Card({ name, email, phone }) {
+export default function Card({ name, email, phone, image, id }) {
   return (
     <div className={styles.card}>
       <div className={styles.cardHeader}>
-        <img src="" alt="" className={styles.cardImg} />
+        <img src={image.url} alt={image.alt} className={styles.cardImg} />
       </div>
       <div>
-        <h3></h3>
-        <p></p>
-        <p></p>
+        <h3>{name}</h3>
+        <p>{email}</p>
+        <p>{phone}</p>
       </div>
     </div>
   );
