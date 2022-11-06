@@ -1,14 +1,14 @@
 import { useEffect, useState } from "react";
-import Link from "next/link";
 import Card from "../../components/Card/Card";
 import Navbar from "../../components/Navbar/Navbar";
 import styles from "../../styles/Home.module.css";
 
-const cats = function () {
+const Cats = function () {
   const [cats, setCats] = useState([]);
 
   const fetchCats = async () => {
     const response = await fetch("/api/cats");
+    console.log(response);
     const json = await response.json();
     setCats(json);
   };
@@ -33,4 +33,4 @@ const cats = function () {
   );
 };
 
-export default cats;
+export default Cats;
