@@ -6,6 +6,12 @@
   margin-right: 3rem;
   margin-bottom: 2rem;
   box-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.294);
+  cursor: pointer;
+}
+
+.card:hover {
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 2);
 }
 
 .cardHeader {

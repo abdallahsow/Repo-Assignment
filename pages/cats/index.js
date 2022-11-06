@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Link from "next/link";
 import Card from "../../components/Card/Card";
 import Navbar from "../../components/Navbar/Navbar";
 import styles from "../../styles/Home.module.css";
@@ -21,8 +22,8 @@ const cats = function () {
   return (
     <>
       <Navbar />
-      <div className='container mt-5'>
-              <div className={styles.wrapper}>
+      <div className="container mt-5">
+        <div className={styles.wrapper}>
           {cats.map((cat) => (
             <Card key={cat.id} {...cat} />
           ))}

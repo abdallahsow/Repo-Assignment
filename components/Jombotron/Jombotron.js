@@ -1,4 +1,8 @@
+import { useRouter } from "next/router";
+
 const Jombotron = () => {
+  const router = useRouter();
+
   return (
     <div class="jumbotron jumbotron-fluid mt-5">
       <div class="container">
@@ -6,7 +10,12 @@ const Jombotron = () => {
         <p class="lead">
           Find your new best friend today. Adopt a wonderful cat.
         </p>
-        <button className="btn btn-primary">Start looking</button>
+        <button
+          className="btn btn-primary"
+          onClick={() => router.push("/cats")}
+        >
+          Start looking
+        </button>
       </div>
     </div>
   );
