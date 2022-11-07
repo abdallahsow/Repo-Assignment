@@ -17,17 +17,20 @@ export default function Cat() {
     fetchCat();
   }, []);
 
+  console.log(cat);
+
   return (
-    <div>
-      {null && (
-        <div className="container mt-5" style={{ display: "flex" }}>
-          <img src={cat.image.url} alt={cat.image.alt} />
-          <div className="mx-5">
-            <h1>{cat.name}</h1>
-            <p>{cat.description}</p>
-          </div>
-        </div>
-      )}
-    </div>
+    // <div>
+    //   {cat.length && (
+    //     <div className="container mt-5" style={{ display: "flex" }}>
+    //       <img src={cat.image.url} alt={cat.image.alt} />
+    //       <div className="mx-5">
+    //         <h1>{cat.name}</h1>
+    //         <p>{cat.description}</p>
+    //       </div>
+    //     </div>
+    //   )}
+    // </div>
+    <pre>{JSON.stringify(cat, null, 2)}</pre>
   );
 }
