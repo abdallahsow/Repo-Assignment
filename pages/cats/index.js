@@ -21,7 +21,7 @@ const Cats = function () {
 
   return (
     <>
-      <Navbar />
+
       <div className="container mt-5">
         <div className={styles.wrapper}>
           {cats.map((cat) => (

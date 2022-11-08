@@ -13,7 +13,6 @@ export default function Home() {
       </Head>
 
       <main>
-        <Navbar />
         <Jombotron />
       </main>
     </div>
